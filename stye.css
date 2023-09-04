@@ -1,0 +1,110 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .hero {
+    background-image: url('photo_2023-09-02_20-55-29.jpg'); 
+    background-size: cover;
+    text-align: center;
+    color: white;
+    padding: 100px 0;
+  }
+  
+  .features {
+    background-color: #f4f4f4;
+    padding: 30px;
+    margin: 20px; 
+  }
+  
+  .packages {
+    padding: 30px;
+    margin: 20px; 
+  }
+  
+  .package {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+  }
+  
+  .testimonials {
+    background-color: #f4f4f4;
+    padding: 30px;
+    margin: 20px; 
+  }
+  
+  .testimonial {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+  }
+  
+  .contact {
+    padding: 30px;
+    margin: 20px; 
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  form button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .package .description,
+.package .price {
+  display: none;
+}
+
+.package:hover .description,
+.package:hover .price {
+  display: block;
+}
