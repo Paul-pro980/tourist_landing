@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Туристический лендинг</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Главная</a></li>
+        <li><a href="#features">О нас</a></li>
+        <li><a href="#packages">Пакеты</a></li>
+        <li><a href="#contact">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+        <h1>Добро пожаловать на наш туристический лендинг!</h1>
+    </section>
+
+        <section class="features" id="features">
+        <h2>Наши особенности</h2>
+        <p>Мы предлагаем широкий выбор туров и экскурсий по всему миру.</p>
+        <p>Наши гиды говорят на различных языках и обладают глубоким знанием местных достопримечательностей.</p>
+        </section>
+        
+    <section class="packages" id="packages">
+      <h2>Популярные пакеты туров</h2>
+      <div class="package">
+        <h3>Париж, Франция</h3>
+        <p class="description">Посетите самые известные достопримечательности Парижа, такие как Эйфелева башня и Лувр.</p>
+        <p class="price">Цена: $1000</p>
+      </div>
+      <div class="package">
+        <h3>Рим, Италия</h3>
+        <p class="description">Исследуйте древние руины Рима и попробуйте настоящую итальянскую пиццу и гельато.</p>
+        <p class="price">Цена: $1200</p>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <h2>Отзывы клиентов</h2>
+      <div class="testimonial">
+        <p class="content">Спасибо за незабываемое путешествие! Мы остались очень довольны вашими услугами.</p>
+        <p class="author">Иван Иванов</p>
+      </div>
+      <div class="testimonial">
+        <p class="content">Прекрасная организация и внимательный персонал. Мы обязательно вернемся к вам еще раз!</p>
+        <p class="author">Анна Смирнова</p>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Свяжитесь с нами</h2>
+      <form id="feedbackForm">
+        <input type="text" placeholder="Ваше имя" required>
+        <input type="email" placeholder="Ваш Email" required>
+        <textarea placeholder="Ваш отзыв" rows="4" required></textarea>
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2023 Туристический лендинг. Все права защищены. | <a href="#">Политика конфиденциальности</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.package').hover(
+        function() {
+          $(this).find('.description, .price').slideDown();
+        },
+        function() {
+          $(this).find('.description, .price').slideUp();
+        }
+      );
+    });
+  </script>
+
+</body>
+</html>
