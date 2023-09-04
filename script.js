@@ -39,16 +39,5 @@ form.addEventListener('submit', function (e) {
 });
 
 
-{/* <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  $(document).ready(function() {
-    $('.package').hover(
-      function() {
-        $(this).find('.description, .price').slideDown();
-      },
-      function() {
-        $(this).find('.description, .price').slideUp();
-      }
-    );
-  });
- */}
+
   
